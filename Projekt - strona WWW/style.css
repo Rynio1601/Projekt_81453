@@ -1,204 +1,196 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #333;
-    color: white;
-  }
-  
-  .top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #555;
-    padding: 10px;
-  }
-  
-  .logo {
-    color: orange;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  input[type="text"] {
-    flex-grow: 1;
-    margin: 0 10px;
-    padding: 5px;
-  }
-  
-  .search-btn {
-    background: orange;
-    border: none;
-    padding: 5px 15px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .contrast-btn {
-    margin-left: 10px;
-    background: #ddd;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  .nav-menu {
-    display: flex;
-    justify-content: center;
-    background: #444;
-    padding: 10px;
-    list-style: none;
-    gap: 20px;
-  }
-  
-  .nav-menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .banner {
-    background-color: orange;
-    text-align: center;
-    padding: 30px 20px;
-    position: relative;
-  }
-  
-  .banner-text {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .banner img {
-    width: 300px;
-    border-radius: 10px;
-  }
-  
-  .carousel {
-    background: #111;
-    padding: 10px;
-    overflow-x: auto;
-  }
-  
-  .carousel-track {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .carousel-track img {
-    height: 100px;
-    background: white;
-    border-radius: 5px;
-    padding: 10px;
-  }
-  
-  .promotions {
-    background-color: orange;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .promotions h3 {
-    font-size: 18px;
-    margin: 0;
-  }
-  
-  .highlight {
-    font-weight: bold;
-    color: black;
-  }
-  
-  .discount {
-    font-weight: bold;
-    color: red;
-    background: #eee;
-    display: inline-block;
-    padding: 5px 10px;
-    margin: 10px 0;
-  }
-  
-  .products {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
-  }
-  
-  .product {
-    background: white;
-    color: black;
-    border-radius: 5px;
-    padding: 10px;
-    width: 150px;
-    text-align: center;
-  }
-  
-  .product img {
-    width: 100%;
-  }
-  
-  footer {
-    background: black;
-    color: white;
-    padding: 20px;
-  }
-  
-  .footer-columns {
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
-  }
-  
-  .footer-bottom {
-    background: purple;
-    text-align: center;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 18px;
-    color: orange;
-  }
-  footer {
-    background: black;
-    color: white;
-    padding: 30px 20px 0;
-    font-size: 14px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #333;
+  color: white;
 }
 
-.footer-columns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #555;
+  padding: 10px;
 }
 
-.column {
-    max-width: 250px;
+.top-bar .logo {
+  color: #ff5a00;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.column h4 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: orange;
+.top-bar input[type="text"] {
+  flex-grow: 1;
+  margin: 0 10px;
+  padding: 5px;
 }
 
-.column ul {
-    list-style: none;
-    padding: 0;
+.top-bar .search-btn,
+.top-bar .contrast-btn,
+.top-bar .speech-btn {
+  background: #ddd;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
-.column li {
-    margin-bottom: 5px;
-    line-height: 1.5;
+.top-bar .search-btn.active,
+.top-bar .contrast-btn.active,
+.top-bar .speech-btn.active {
+  background-color: #ff5a00;
+  color: white;
+  font-weight: bold;
 }
 
-.footer-bottom {
-    background: purple;
-    color: orange;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 20px;
-    font-weight: bold;
+.top-bar .search-btn {
+  background: #ff5a00;
+  padding: 5px 15px;
+  font-weight: bold;
 }
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  background: #444;
+  padding: 10px;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.banner {
+  background-color: #ff5a00;
+  text-align: center;
+  padding: 30px 20px;
+  position: relative;
+}
+
+.banner .banner-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banner img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px 0;
+  background: #111;
+}
+
+.carousel .carousel-track {
+  display: flex;
+  gap: 10px;
+}
+
+.carousel .carousel-track img {
+  width: 120px;
+  height: auto;
+  background: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.promotions {
+  background-color: #ff5a00;
+  padding: 20px;
+  text-align: center;
+}
+
+.promotions h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.promotions .highlight {
+  font-weight: bold;
+  color: black;
+}
+
+.promotions .discount {
+  font-weight: bold;
+  color: red;
+  background: #eee;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 10px 0;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.products .product {
+  background: white;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.products .product img {
+  width: 100%;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 30px 20px 0;
+  font-size: 14px;
+}
+
+footer .footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+footer .footer-columns .column {
+  max-width: 250px;
+}
+
+footer .footer-columns .column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ff5a00;
+}
+
+footer .footer-columns .column ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-columns .column ul li {
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+footer .footer-bottom {
+  background: purple;
+  color: #ff5a00;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .high-contrast {
   background-color: black !important;
   color: yellow !important;
@@ -224,82 +216,72 @@ body {
   background-color: yellow !important;
   color: black !important;
 }
+
+.readable {
+  cursor: pointer;
+  outline: none;
+}
+
+.reading {
+  outline: 2px dashed yellow;
+  outline-offset: 4px;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    outline-color: transparent;
+  }
+}
+
 @media (max-width: 768px) {
-
   .top-bar {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
-
   .nav-menu {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 5px;
-      padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 10px 20px;
   }
-
   .nav-menu li {
-      display: block;
-      width: 100%;
+    display: block;
+    width: 100%;
   }
-
   .products {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .product img {
-      width: 100%;
-      max-width: 250px;
+  .products .product img {
+    width: 100%;
+    max-width: 250px;
   }
-
   .banner {
-      padding: 20px;
-      font-size: 20px;
+    padding: 20px;
+    font-size: 20px;
   }
-
   .banner img {
-      width: 100%;
-      max-width: 100%;
+    width: 100%;
+    max-width: 100%;
   }
-
   .footer-columns {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 20px;
-      gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
   }
-
-  .column {
-      width: 100%;
+  .footer-columns .column {
+    width: 100%;
   }
-
   input[type="text"] {
-      width: 100%;
+    width: 100%;
   }
-
   .search-btn,
-  .contrast {
-      width: 100%;
-      padding: 10px;
+  .contrast-btn,
+  .speech-btn {
+    width: 100%;
+    padding: 10px;
   }
-}
-.carousel {
-  display: flex;
-  justify-content: center;  
-  align-items: center;      
-  overflow: hidden;
-  padding: 20px 0;
-}
-
-.carousel-track {
-  display: flex;
-  gap: 10px;
-}
-
-.carousel-track img {
-  width: 120px;
-  height: auto;
-  border-radius: 5px;
 }
