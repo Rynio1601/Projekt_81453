@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alledrogo</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">alledrogo</div>
+      <input type="text" placeholder="czego szukasz?"/>
+      <button class="search-btn">Szukaj</button>
+      <button class="contrast-btn" onclick="toggleContrast()">Kontrast</button>
+    </div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#" class="readable">Kategorie</a></li>
+        <li><a href="#" class="readable">Alledrogo Days</a></li>
+        <li><a href="#" class="readable">Alledrogo Protect</a></li>
+        <li><a href="#" class="readable">Gwarancje najniższej ceny</a></li>
+        <li><a href="#" class="readable">Sprzedawaj na alledrogo</a></li>
+          <button class="speech-btn" onclick="toggleSpeech()">Czytaj na głos</button>
+      </ul>
+    </nav>
+    <script>
+      function toggleContrast() {
+          document.body.classList.toggle('high-contrast');
+      }
+  </script>
+  </header>
+
+  <main>
+    <section class="banner">
+      <div class="banner-text readable">Kiedy nadchodzi<br>zima to niskie ceny<br>się panoszą</div>
+      <img src="images/banner.png" alt="Banner" />
+    </section>
+
+    <section class="carousel">
+      <div class="carousel-track">
+        <img src="images/product.png" alt="Promocja" class="readable">
+        <img src="images/product.png" alt="Promocja" class="readable">
+        <img src="images/product.png" alt="Promocja" class="readable">
+        <img src="images/product.png" alt="Promocja" class="readable">
+        <img src="images/product.png" alt="Promocja" class="readable">
+      </div>
+    </section>
+
+    <section class="promotions">
+      <h3 class="readable">
+        Jak <span class="highlight">okazje dla smartowicza</span>, to rozgrzewka przed <strong>Alledrogo Days</strong>
+      </h3>
+      <p class="discount readable">Do niedzieli -70%</p>
+      <div class="products">
+        <div class="product readable">
+          <img src="images/laptop.png" alt="Laptop" />
+          <p class="product-price">Cena: 4299 zł</p>
+          <p>Laptop gamingowy</p>
+        </div>
+        <div class="product readable">
+          <img src="images/laptop.png" alt="Laptop" />
+          <p class="product-price">Cena: 4299 zł</p>
+          <p>Laptop gamingowy</p>
+        </div>
+        <div class="product readable">
+          <img src="images/laptop.png" alt="Laptop" />
+          <p class="product-price">Cena: 4299 zł</p>
+          <p>Laptop gamingowy</p>
+        </div>
+        <div class="product readable">
+          <img src="images/laptop.png" alt="Laptop" />
+          <p class="product-price">Cena: 4299 zł</p>
+          <p>Laptop gamingowy</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-columns">
+        <div class="column">
+            <h4>Alledrogo</h4>
+            <ul>
+                <li class="readable">O nas</li>
+                <li class="readable">Alledrogo Share</li>
+                <li class="readable">Reklama</li>
+                <li class="readable">Alledrogo Ads</li>
+                <li class="readable">Alledrogo API</li>
+                <li class="readable">Praca w Alledrogo</li>
+                <li class="readable">Zrównoważony rozwój</li>
+                <li class="readable">Mapa strony</li>
+                <li class="readable">Rankingi produktów</li>
+                <li class="readable">Informacja o realizacji strategii podatkowej</li>
+                <li class="readable">Informacje dla Aktu o Usługach Cyfrowych</li>
+                <li class="readable">Dodatkowe informacje o reklamie</li>
+                <li class="readable">Raport o przeciwdziałaniu rozpowszechniania treści</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>Centrum pomocy</h4>
+            <ul>
+                <li class="readable">Pomoc dla kupujących</li>
+                <li class="readable">Aktualności dla kupujących</li>
+                <li class="readable">Spytaj Społeczność</li>
+                <li class="readable">Dla kupujących</li>
+                <li class="readable">Pomoc dla sprzedających</li>
+                <li class="readable">Sprzedawaj na Alledrogo</li>
+                <li class="readable">Zwrot zakupu</li>
+                <li class="readable">Polityka prywatności</li>
+                <li class="readable">Polityka plików cookies</li>
+                <li class="readable">Ustawienia plików cookies</li>
+                <li class="readable">Regulamin</li>
+                <li class="readable">Udostępnianie lokalizacji</li>
+                <li class="readable">Bezpieczeństwo</li>
+                <li class="readable">Sprzedaż międzynarodowa</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>Serwisy</h4>
+            <ul>
+                <li class="readable">Alledrogo Protect</li>
+                <li class="readable">Akademia Alledrogo</li>
+                <li class="readable">Alledrogo Analytics</li>
+                <li class="readable">Alledrogo Business</li>
+                <li class="readable">Alledrogo Care</li>
+                <li class="readable">Alledrogo Cash</li>
+                <li class="readable">Alledrogo Charytatywni</li>
+                <li class="readable">Alledrogo Inspiruje</li>
+                <li class="readable">Alledrogo Lokalnie</li>
+                <li class="readable">Alledrogo Merchant Finance</li>
+                <li class="readable">Alledrogo One</li>
+                <li class="readable">Alledrogo One Fulfillment</li>
+                <li class="readable">Alledrogo Pay</li>
+                <li class="readable">Alledrogo Pay Business</li>
+                <li class="readable">Alledrogo Smart!</li>
+                <li class="readable">Archiwum Alledrogo</li>
+                <li class="readable">Karty podarunkowe Alledrogo</li>
+                <li class="readable">Monety Alledrogo</li>
+                <li class="readable">Strefa marek</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>Ustawienia</h4>
+            <ul>
+                <li class="readable">Kraj Polska</li>
+                <li class="readable">Kraj dostawy Polska</li>
+                <li class="readable">Język polski</li>
+                <li class="readable">Waluta PLN</li>
+                <li class="readable">motyw: wygląd ciemny</li>
+                <li class="readable">Ustawienia lokalizacji</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        Alledrogo
+    </div>
+</footer>
+<script>
+   function czytajTekst(tekst, el) {
+    if (!tekst.trim()) return;
+    const wypowiedz = new SpeechSynthesisUtterance(tekst);
+    wypowiedz.lang = 'pl-PL';
+    if (el) {
+      el.classList.add('reading');
+      setTimeout(() => el.classList.remove('reading'), 3000);
+    }
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(wypowiedz);
+  }
+
+  function obsluzZdarzenie(e) {
+    const el = e.target.closest('.readable'); // <--- UWAGA: używamy .closest!
+    if (!el || ['BUTTON', 'INPUT', 'TEXTAREA'].includes(el.tagName)) return;
+
+    const tekst = el.innerText || el.alt || '';
+    if (tekst) {
+      czytajTekst(tekst, el);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const czytelneElementy = document.querySelectorAll('.readable');
+    czytelneElementy.forEach(el => {
+      el.addEventListener('click', obsluzZdarzenie);
+      el.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          obsluzZdarzenie(e);
+        }
+      });
+      el.setAttribute('tabindex', '0');
+      el.setAttribute('role', 'button');
+      el.setAttribute('aria-label', el.innerText || el.alt || 'czytaj tekst');
+    });
+  }); 
+</script>
+</body>
+</html>
